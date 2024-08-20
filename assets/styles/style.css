@@ -158,29 +158,3 @@ body {
     }
   }
 }
-
-@media screen and (max-width: 480px) {
-  .header h1 {
-    font-size: 18px;
-  }
-
-  .header img {
-    border-radius: 0;
-  }
-
-  .preparation-times-container article {
-    padding: 10px;
-  }
-
-  .ingredients h2,
-  .instructions h2,
-  .nutrition-facts h2 {
-    font-size: 16px;
-  }
-
-  .ingredients-list li,
-  .instructions p,
-  .nutrition-facts p {
-    font-size: 12px;
-  }
-}
