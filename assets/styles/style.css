@@ -1,0 +1,186 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.header img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Preparation times section */
+.preparation-times-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.preparation-times-container article {
+  background-color: #f5f5f5;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+  width: 30%;
+}
+
+.preparation-times-container span {
+  display: block;
+  font-weight: bold;
+  color: #555555;
+  margin-bottom: 5px;
+}
+
+.preparation-times-container h2 {
+  font-size: 18px;
+  color: #333333;
+  margin: 0;
+}
+
+/* Card  ajustadas */
+.main-content .preparation-times-container .prep-time {
+  width: 10em;
+}
+
+.main-content .preparation-times-container .cook-time {
+  width: 10em;
+}
+
+.main-content .preparation-times-container .total-time {
+  width: 10em;
+}
+/* Ingredients section */
+.ingredients h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.ingredients-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.ingredients-list li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.temperature {
+  font-size: 14px;
+  color: #777777;
+  margin-left: 10px;
+}
+
+/* Instructions section */
+.instructions h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.instructions p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Nutrition facts section */
+.nutrition-facts h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.nutrition-facts p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .preparation-times-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .preparation-times-container article {
+    flex: 1 1 30%;
+    margin: 5px;
+    text-align: center;
+  }
+
+  .ingredients h2,
+  .instructions h2,
+  .nutrition-facts h2 {
+    font-size: 18px;
+  }
+
+  .ingredients-list li,
+  .instructions p,
+  .nutrition-facts p {
+    font-size: 14px;
+  }
+
+  /* Ajuste para pantallas más pequeñas */
+  @media screen and (max-width: 480px) {
+    .preparation-times-container article {
+      flex: 1 1 45%;
+      margin: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header h1 {
+    font-size: 18px;
+  }
+
+  .header img {
+    border-radius: 0;
+  }
+
+  .preparation-times-container article {
+    padding: 10px;
+  }
+
+  .ingredients h2,
+  .instructions h2,
+  .nutrition-facts h2 {
+    font-size: 16px;
+  }
+
+  .ingredients-list li,
+  .instructions p,
+  .nutrition-facts p {
+    font-size: 12px;
+  }
+}
